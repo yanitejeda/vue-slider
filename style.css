@@ -1,0 +1,14 @@
+.testoImg{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.imgBig > img{
+    width: 100%;
+}
+
+.imgBig{
+    position: relative;
+}
