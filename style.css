@@ -1,14 +1,74 @@
 .testoImg{
     color: white;
     position: absolute;
-    bottom: 0;
+    top: 250px;
     right: 20px;
 }
 
 .imgBig > img{
     width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    
 }
 
 .imgBig{
     position: relative;
+    opacity: 0;
+}
+
+.imgSinistra{
+    width: 80%;
+    overflow: hidden;
+}
+
+.box-container{
+    display: flex;
+}
+
+.imgDestra{
+    width: 20%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.active{
+    opacity: 1;
+}
+
+
+
+/* 
+side box container
+ */
+
+.imgSmall > img{
+    width: 100%;
+    
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.arrow-top{
+    position: absolute;
+    top: 10px;
+
+}
+.arrow-bottom{
+    position: absolute;
+    bottom: 10px;
+
+}
+
+
+.picture-side{
+    opacity: 0.5;
 }

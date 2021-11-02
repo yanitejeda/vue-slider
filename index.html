@@ -4,23 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     
     <link rel="stylesheet" href="style.css">
     <title>Slider</title>
 </head>
 <body>
-
+<div class="box-container" id="box">
+    
     <div class="imgSinistra">
-        <div class="imgBig">
-            <img src="img/01.jpg" alt=""> <!--img slide grande-->
+        <div class="imgBig" :class="i === currentActivePicture ? 'active' : '' " v-for="elenco,i in elenco">
+
+                <img v-bind:src="elenco.picture" alt="{{elenco.titolo}}"> <!--img slide grande-->
+            
+          
             <div class="testoImg">
-                <h3><!--Titolo foto-->titolo </h3>
-                <p><!--descrizione foto-->descrizione</p>
+                <h3><!--Titolo foto-->
+                    {{elenco.titolo}} 
+                </h3>
+                <p><!--descrizione foto--> 
+                    {{elenco.testo}}
+                </p>
             </div>
         </div>
     </div>
+
+
+   <div class="imgDestra">
+    <div class="imgSmall" >
+
+        <img v-bind:src="elenco.picture" class="picture-side" alt="{{elenco.titolo}}" v-for="elenco,i in elenco" :class="i === currentActivePicture ? 'active' : '' " > <!--img side piccola-->
+    </div>
     
+    <div class="arrow-top">
+        <i class="fas fa-chevron-circle-up" @click="arrowUp()"></i>
+    </div>
+    <div class="arrow-bottom">
+        <i class="fas fa-chevron-circle-down"  @click="arrowDown()"></i>
+    </div>   
+   </div>
+    
+</div>
 
     <script src="slide.js"></script>
 </body>
