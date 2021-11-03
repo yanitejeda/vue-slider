@@ -3,6 +3,7 @@
     position: absolute;
     top: 250px;
     right: 20px;
+    text-align: right;
 }
 
 .imgBig > img{
@@ -27,6 +28,9 @@
 
 .box-container{
     display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 .imgDestra{
@@ -40,10 +44,6 @@
 }
 
 
-.active{
-    opacity: 1;
-}
-
 
 
 /* 
@@ -55,6 +55,7 @@ side box container
     
     overflow: hidden;
     object-fit: cover;
+    height: 65px;
 }
 
 .arrow-top{
@@ -72,3 +73,13 @@ side box container
 .picture-side{
     opacity: 0.5;
 }
+
+.active{
+    opacity: 1;
+}
+
+.active-side{
+    opacity: 1;
+    border: 2px solid rgb(255, 255, 255);
+}
+
