@@ -50,12 +50,12 @@
 side box container
  */
 
-.imgSmall > img{
+.imgSmall img{
     width: 100%;
-    
+    display: flex;
     overflow: hidden;
     object-fit: cover;
-    height: 65px;
+    height: 70px;
 }
 
 .arrow-top{

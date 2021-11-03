@@ -7,11 +7,11 @@ const slide = new Vue ({
          elenco : [
             {   picture : 'img/01.jpg',
                 titolo: 'Svezia',
-                testo : ' del testo a caso',
+                testo : ' lago del testo a caso',
             },
             {   picture : 'img/02.jpg',
                 titolo: 'Svizzera',
-                testo : ' del testo a caso',
+                testo : 'descrizione montagna',
             },
             {   picture : 'img/03.jpg',
                 titolo: 'Londra',
@@ -23,7 +23,7 @@ const slide = new Vue ({
             },
             {   picture : 'img/05.jpg',
                 titolo: 'Temae BeachTahiti',
-                testo : ' del testo  lsdsdjsjdisdhisha caso',
+                testo : 'Spiaggia paradisiaca',
             },
         ],
         currentActivePicture: 0
